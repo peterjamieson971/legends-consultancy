@@ -1,0 +1,22 @@
+{
+  "name": "legends-consultancy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Legends Consultancy Website - A collective of luxury & lifestyle veterans",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
