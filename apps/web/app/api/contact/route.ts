@@ -29,7 +29,7 @@ export async function POST(request: Request) {
     const data = await resend.emails.send({
       from: 'Legends Website <onboarding@resend.dev>', // Update with verified domain
       to: process.env.CONTACT_EMAIL || 'info@legends-consultancy.com',
-      replyTo: email,
+      reply_to: email,
       subject: `New Contact Form Submission - ${name}`,
       html: `
         <!DOCTYPE html>
