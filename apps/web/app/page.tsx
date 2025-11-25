@@ -1,11 +1,19 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center bg-navy text-white">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy via-charcoal to-navy opacity-90"></div>
+        <Image
+          src="/images/hero-image.jpg"
+          alt="Legends Consultancy"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-navy/70 via-charcoal/60 to-navy/70"></div>
         <div className="relative z-10 text-center px-4">
           <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl mb-6 text-white">
             Legends
